@@ -1,27 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-  body {
-    @apply bg-gray-950 text-white antialiased;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  input[type="range"] {
-    @apply h-2 rounded-full appearance-none bg-gray-800 cursor-pointer;
-  }
-
-  input[type="range"]::-webkit-slider-thumb {
-    @apply appearance-none w-5 h-5 rounded-full bg-blue-600 cursor-pointer;
-  }
-
-  input[type="range"]::-moz-range-thumb {
-    @apply w-5 h-5 rounded-full bg-blue-600 border-0 cursor-pointer;
-  }
-
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: #1f2937 transparent;
-  }
-}
