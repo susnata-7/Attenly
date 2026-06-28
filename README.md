@@ -1,0 +1,41 @@
+{
+  "name": "attenly",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "typecheck": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.72.0",
+    "@react-navigation/native": "^6.1.16",
+    "@react-navigation/bottom-tabs": "^6.6.3",
+    "expo-sqlite": "^14.0.0",
+    "@expo/vector-icons": "^13.0.0",
+    "react-native-svg": "^13.10.0",
+    "expo-font": "^12.1.2",
+    "@react-native-async-storage/async-storage": "^1.19.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.72.5",
+    "typescript": "^5.3.3",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-native": "^4.0.3",
+    "prettier": "^3.2.4",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0"
+  }
+}
