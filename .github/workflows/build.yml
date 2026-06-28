@@ -33,3 +33,12 @@ jobs:
         run: npx eas-cli build --platform android --profile production --non-interactive
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Create Github Release background: 
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref,'refs/tags/')
+        with: 
+          files:"**/*.apk"
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          
